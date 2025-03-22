@@ -1,0 +1,118 @@
+/* div {
+    width: 500px;
+    height: 400px;
+    background-image: url(images.jfif),url(istockphoto-825383494-612x612.jpg), url(istockphoto-1403500817-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position: right center,left bottom, center;
+    background-size: 150px, 200px, cover;
+} */
+
+.ul1 {
+    list-style-type: square;
+}
+.ul2 {
+    list-style-type: armenian;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    background-color: red;
+    width: 500px;
+    height: 300px;
+    border: 10px solid;
+    outline: 5px solid;
+    padding: 7px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+p {
+    color: blue;
+}
+@font-face {
+    font-family: armenian;
+    src: url('Fonts/BraindAmanor.otf');
+} 
+p.arm-font {
+    font-family: "armenian";
+}
+.position {
+    width: 200px;
+    position: relative;
+    top: 30px;
+    border: 1px solid;
+}
+
+h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    margin: 0;
+}
+.light {
+    width: 100px;
+    margin: 100px;
+    background-color: black;
+}
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 10s;
+}
+@keyframes example {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+.picture1, .picture2, .picture3 {
+    width: 33%;
+    float: left;
+    background-repeat: no-repeat;
+}
+img {
+    max-width: 100%;
+}
+@media(max-width: 600px) {
+    .picture1, .picture2, .picture3 {width: 100%; float: none;}
+}
